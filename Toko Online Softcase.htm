@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://panargusa.me/home.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Toko Online Softcase</title>
+  <link rel="stylesheet" type="text/css" href="./Toko Online Softcase_files/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./Toko Online Softcase_files/main.css">
+  <link rel="icon" type="image/gif/png" href="http://panargusa.me/asset/img/Title.png">
+</head>
+<body>
+
+
+<!-- navbar -->
+<nav class="navbar navbar-fixed">
+  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://panargusa.me/home.php">
+        <img style="width:14vw; height:7vh; padding-top:0px;" alt="Brand" src="./Toko Online Softcase_files/Brand1.png">
+      </a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        
+                <a href="http://panargusa.me/proses/logout.php"><button class="btn navbar-btn" id="btn-logout" style="color:#7986cb;margin-top:-0.8vh;
+                background-color: white;"><b>Logout</b></button></a>
+                  </li>
+      <li style="border-left: 1px solid white">
+      
+            <a class="not-active" href="http://panargusa.me/keranjang.php" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Keranjang"><i class="glyphicon glyphicon-shopping-cart" id="trolly"></i></a>
+          
+
+        
+      </li>
+      
+    </ul>
+    
+
+    <form action="http://panargusa.me/pencarian.php" method="get" class="navbar-form navbar-right" style="margin-top: 4vh">
+      <div class="input-group" style="width:45vw; margin-right: 8vw; margin-top: 1vh;">
+        <input type="text" class="form-control" placeholder="Search Product" name="keyword">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search" style="opacity: 0.7"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+
+  <!-- userLog -->
+  <div class="container" id="log">
+    <ul class="nav nav-tabs nav-justified">
+      <li><a href="http://panargusa.me/home.php#freg" data-toggle="tab" style="font-style:bold;font-size: 1.2em; color:#1c6def">Daftar</a></li>
+      <li class="active"><a href="http://panargusa.me/home.php#flogin" data-toggle="tab" style="font-style:bold;font-size: 1.2em; color:#1c6def">Login</a></li>
+    </ul>
+    <div class="tab-content">
+        <form action="http://panargusa.me/proses/login.php" method="post" role="form" id="flogin" style="padding-top: 10px" class="tab-pane fade in active">
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password :</label>
+          <input type="password" class="form-control" id="pwd" name="password">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+
+      <form action="http://panargusa.me/proses/daftar.php" method="post" role="form" id="freg" style="padding-top: 10px" class="tab-pane fade">
+        <div class="form-group">
+          <label for="nama">Nama :</label>
+          <input type="text" class="form-control" id="nama" name="nama" required="">
+        </div>
+        <div class="form-group">
+          <label for="noTelp">Nomor Telepon :</label>
+          <input type="telp" class="form-control" id="noTelp" name="telpon" required="">
+        </div>
+        <div class="form-group">
+          <label for="email">Email :</label>
+          <input type="email" class="form-control" id="email" name="email" required="">
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat :</label>
+          <input type="text" class="form-control" id="alamat" name="alamat" required="">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password :</label>
+          <input type="password" class="form-control" id="pwd" name="password" required="">
+        </div>
+        <div class="form-group">
+          <label for="pwd2">Konfirmasi Password :</label>
+          <input type="password" class="form-control" id="pwd2" name="repassword" required="">
+        </div>
+        <button type="submit" class="btn btn-primary">Daftar</button>
+      </form>
+    </div>
+  </div>
+</div></nav>
+<!-- end of navbar -->
+
+<!-- navbar sekunder -->
+<div class="container-fluid kategori">
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-2">
+        <a href="http://panargusa.me/home.php"><img style="width:14vw; height:7vh; padding-top:2vh;" alt="Brand" src="./Toko Online Softcase_files/Brand1.png"></a>
+    </div>
+    <div class="col-xs-6">
+      <ul class="nav nav-pills kategori2">
+        <li><a data-toggle="pill" href="http://panargusa.me/home.php#All">All</a></li>
+        <li><a data-toggle="pill" href="http://panargusa.me/home.php#Samsung">Samsung</a></li>
+        <li><a data-toggle="pill" href="http://panargusa.me/home.php#Iphone">Iphone</a></li>
+        <li><a data-toggle="pill" href="http://panargusa.me/home.php#Oppo">Oppo</a></li>
+        <li><a data-toggle="pill" href="http://panargusa.me/home.php#Xiaomi">Xiaomi</a></li>
+        <li><a data-toggle="pill" href="http://panargusa.me/home.php#Vivo">Vivo</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  
+<!-- end of navbar sekunder --><div class="container-fluid" id="isi">
+  
+
+  <div class="row">
+    <div class="col-xs-2 col-xs-offset-5" id="produk-laris">
+      <h3 style="font-family: Blacksword; font-size:2.2em;"><strong>Produk Softcase</strong></h3>
+    </div>
+    <!-- <div class="container">
+            <h4 class="draf-kategori">Kategori : </h4>
+            <ul class="nav nav-pills">
+     
+              <li class="item-kategori"><a data-toggle="tab" href="#Samsung">Samsung</a></li>
+              <li class="item-kategori"><a data-toggle="tab" href="#Iphone">Iphone</a></li>
+              <li class="item-kategori"><a data-toggle="tab" href="#Oppo">Oppo</a></li>
+              <li class="item-kategori"><a data-toggle="tab" href="#Xiaomi">Xiaomi</a></li>              
+              <li class="item-kategori"><a data-toggle="tab" href="#Vivo">Vivo</a></li>
+            </ul>
+          </div> -->
+  </div>
+  
+
+
+  <!-- Laman Produk-->
+  
+  <div class="container" id="produk">
+    <div class="tab-content">
+    <!-- All -->
+      <div id="All" class="tab-pane fade in active">
+      <ul>
+      
+            <li>
+        <a href="http://panargusa.me/home.php#1">
+          <img src="./Toko Online Softcase_files/9783872490ae3403e95f26731b6cb3d0.png" alt="softcase love">
+          <span></span>
+        </a>
+        <div class="overlay" id="1">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/9783872490ae3403e95f26731b6cb3d0.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase love</strong></h4>
+              <p>bisa di custom</p>
+              <h5>Rp.90000</h5>
+              <button type="button" class="btn btn-success">Stock : 4</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=1&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+          
+            <li>
+        <a href="http://panargusa.me/home.php#2">
+          <img src="./Toko Online Softcase_files/c1fc6461579220528976d43b9867bd58.png" alt="softcase pinkky">
+          <span></span>
+        </a>
+        <div class="overlay" id="2">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/c1fc6461579220528976d43b9867bd58.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase pinkky</strong></h4>
+              <p>softcase bahan ultrathin untuk samsung a10</p>
+              <h5>Rp.70000</h5>
+              <button type="button" class="btn btn-success">Stock : 5</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=2&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+          
+            <li>
+        <a href="http://panargusa.me/home.php#3">
+          <img src="./Toko Online Softcase_files/906f555b3350dc216b69e988741067b0.png" alt=" softcase spongebob">
+          <span></span>
+        </a>
+        <div class="overlay" id="3">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/906f555b3350dc216b69e988741067b0.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong> softcase spongebob</strong></h4>
+              <p>softcase bahan ultrathin untuk Iphone 6s</p>
+              <h5>Rp.80000</h5>
+              <button type="button" class="btn btn-success">Stock : 5</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=3&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+          
+            <li>
+        <a href="http://panargusa.me/home.php#4">
+          <img src="./Toko Online Softcase_files/2b877985d233f17ef58d819c7d327dea.png" alt="softcase army">
+          <span></span>
+        </a>
+        <div class="overlay" id="4">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/2b877985d233f17ef58d819c7d327dea.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase army</strong></h4>
+              <p>softcase bahan ultrathin untuk Oppo a37</p>
+              <h5>Rp.60000</h5>
+              <button type="button" class="btn btn-success">Stock : 4</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=4&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+          
+            <li>
+        <a href="http://panargusa.me/home.php#5">
+          <img src="./Toko Online Softcase_files/b3d4bfd173a6971c8e2a1ea6134a8d9f.png" alt="softcase flower">
+          <span></span>
+        </a>
+        <div class="overlay" id="5">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/b3d4bfd173a6971c8e2a1ea6134a8d9f.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase flower</strong></h4>
+              <p>softcase bahan ultrathin untuk Xiaomi 6a</p>
+              <h5>Rp.70000</h5>
+              <button type="button" class="btn btn-success">Stock : 8</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=5&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+          
+            <li>
+        <a href="http://panargusa.me/home.php#6">
+          <img src="./Toko Online Softcase_files/db2a2b81f97e21d8edf18dd3c8e03818.png" alt="softcase monokuma">
+          <span></span>
+        </a>
+        <div class="overlay" id="6">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/db2a2b81f97e21d8edf18dd3c8e03818.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase monokuma</strong></h4>
+              <p>softcase bahan ultrathin untuk oppo a3s </p>
+              <h5>Rp.50000</h5>
+              <button type="button" class="btn btn-success">Stock : 6</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=6&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+                <div class="clear"></div>
+    </ul>
+    </div>
+    <!-- end of All -->
+
+      <!-- Samsung -->
+      <div id="Samsung" class="tab-pane fade ">
+      <ul>
+      
+            <li>
+              <a href="http://panargusa.me/home.php#1">
+                <img src="./Toko Online Softcase_files/9783872490ae3403e95f26731b6cb3d0.png" alt="softcase love">
+                <span></span>
+              </a>
+              <div class="overlay" id="1">
+                <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+                <img src="./Toko Online Softcase_files/9783872490ae3403e95f26731b6cb3d0.png">
+                <div class="keterangan">
+                  <div class="container">
+                    <h4><strong>softcase love</strong></h4>
+                    <p>bisa di custom</p>
+                    <h5>Rp.90000</h5>
+                    <button type="button" class="btn btn-success">Stock : 4</button>
+                    
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=1&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+          
+            <li>
+              <a href="http://panargusa.me/home.php#2">
+                <img src="./Toko Online Softcase_files/c1fc6461579220528976d43b9867bd58.png" alt="softcase pinkky">
+                <span></span>
+              </a>
+              <div class="overlay" id="2">
+                <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+                <img src="./Toko Online Softcase_files/c1fc6461579220528976d43b9867bd58.png">
+                <div class="keterangan">
+                  <div class="container">
+                    <h4><strong>softcase pinkky</strong></h4>
+                    <p>softcase bahan ultrathin untuk samsung a10</p>
+                    <h5>Rp.70000</h5>
+                    <button type="button" class="btn btn-success">Stock : 5</button>
+                    
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=2&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+                <div class="clear"></div>
+    </ul>
+
+   
+    </div>
+    <!-- end of Samsung -->
+
+    <!-- Iphone -->
+      <div id="Iphone" class="tab-pane fade">
+      <ul>
+      
+            <li>
+        <a href="http://panargusa.me/home.php#3">
+          <img src="./Toko Online Softcase_files/906f555b3350dc216b69e988741067b0.png" alt=" softcase spongebob">
+          <span></span>
+        </a>
+        <div class="overlay" id="3">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/906f555b3350dc216b69e988741067b0.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong> softcase spongebob</strong></h4>
+              <p>softcase bahan ultrathin untuk Iphone 6s</p>
+              <h5>Rp.80000</h5>
+              <button type="button" class="btn btn-success">Stock : 5</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=3&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+                <div class="clear"></div>
+    </ul>
+    </div>
+    <!-- end of Iphone -->
+
+    <!-- Oppo -->
+      <div id="Oppo" class="tab-pane fade">
+      <ul>
+        
+            <li>
+            <a href="http://panargusa.me/home.php#4">
+              <img src="./Toko Online Softcase_files/2b877985d233f17ef58d819c7d327dea.png" alt="softcase army">
+              <span></span>
+            </a>
+            <div class="overlay" id="4">
+              <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+              <img src="./Toko Online Softcase_files/2b877985d233f17ef58d819c7d327dea.png">
+              <div class="keterangan">
+                <div class="container">
+                  <h4><strong>softcase army</strong></h4>
+                  <p>softcase bahan ultrathin untuk Oppo a37</p>
+                  <h5>Rp.60000</h5>
+                  <button type="button" class="btn btn-success">Stock : 4</button>
+                  
+                      <a href="http://panargusa.me/proses/beli.php?idProduk=4&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                    
+                </div>
+              </div>
+            </div>
+          </li>  
+                  <div class="clear"></div>
+    </ul>
+    </div>
+    <!-- end of Oppo -->
+
+    <!-- Xiaomi-Xiaomi -->
+      <div id="Xiaomi" class="tab-pane fade">
+      <ul>
+        
+            <li>
+        <a href="http://panargusa.me/home.php#5">
+          <img src="./Toko Online Softcase_files/b3d4bfd173a6971c8e2a1ea6134a8d9f.png" alt="softcase flower">
+          <span></span>
+        </a>
+        <div class="overlay" id="5">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/b3d4bfd173a6971c8e2a1ea6134a8d9f.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase flower</strong></h4>
+              <p>softcase bahan ultrathin untuk Xiaomi 6a</p>
+              <h5>Rp.70000</h5>
+              <button type="button" class="btn btn-success">Stock : 8</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=5&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+                <div class="clear"></div>
+    </ul>
+    </div>
+    <!-- end of Xiaomi-Xiaomi -->
+    <!-- Vivo -->
+      <div id="Vivo" class="tab-pane fade">
+      <ul>
+      
+            <li>
+        <a href="http://panargusa.me/home.php#6">
+          <img src="./Toko Online Softcase_files/db2a2b81f97e21d8edf18dd3c8e03818.png" alt="softcase monokuma">
+          <span></span>
+        </a>
+        <div class="overlay" id="6">
+          <a href="http://panargusa.me/home.php#" class="close"><i class="glyphicon glyphicon-remove"></i></a>
+          <img src="./Toko Online Softcase_files/db2a2b81f97e21d8edf18dd3c8e03818.png">
+          <div class="keterangan">
+            <div class="container">
+              <h4><strong>softcase monokuma</strong></h4>
+              <p>softcase bahan ultrathin untuk oppo a3s </p>
+              <h5>Rp.50000</h5>
+              <button type="button" class="btn btn-success">Stock : 6</button>
+              
+                  <a href="http://panargusa.me/proses/beli.php?idProduk=6&amp;idUser=4"><button type="button" class="btn btn-info">Masukkan Keranjang</button></a>
+                
+            </div>
+          </div>
+        </div>
+      </li>  
+                <div class="clear"></div>
+    </ul>
+    </div>
+    <!-- end of Vivo -->
+    </div>
+
+    
+  </div>
+  <!-- kontent end of produkumum -->
+</div>
+
+
+
+<!-- footer -->
+  <div class="container-fluid" id="footer">
+    <div class="row">
+      <div class="col-xs-3 text-white">
+        <img src="./Toko Online Softcase_files/Brand1.png">
+        <p style="padding-left: 1.3vw;margin-top: 8px; font-family: Eras Demi ITC; font-size: 17px">
+        Toko Softcase Online yang menawaran berbagai macam produk softcase custom sesuai gaya masa kini dan juga memberikan informasi tentang produk softacse yang ditawarkan agar pembeli tidak hanya senang menggunakan produk ini.</p>
+       
+      </div>
+      
+      <div class="col-xs-3 col-xs-offset-1 text-white">
+        <h3 style="font-family:Cooper Std Black">Hubungi Kami</h3>
+        <hr>
+        <a href="http://panargusa.me/home.php" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="./Toko Online Softcase_files/facebook.png"></a>
+        <a href="http://panargusa.me/home.php" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="./Toko Online Softcase_files/youtube.png"></a>
+        <a href="http://panargusa.me/home.php" target="_blank"><img style="width: 40px; height: 40px; margin-right: 1vw;" src="./Toko Online Softcase_files/instagram.png"></a>
+        <hr>
+        <br>
+        <h3 style="font-family:Cooper Std Black">Created :</h3>
+        <p>- Vivi Dian Pratiwi 18.5.00009 | TI*A-18/S1</p>
+        <p>- Ayudian Siti M 18.5.00045 | TI*A-18/S1</p>
+      </div>
+      
+      <div class="col-xs-3 col-xs-offset-1 text-white">
+      <h3 style="font-family:Cooper Std Black">Komentar </h3>
+      <hr>
+      <br>
+        <form action="http://panargusa.me/proses/komentar.php" method="post" role="form">
+          <div class="form-group">
+            <label for="nama">Nama : </label>
+            <input type="text" class="form-control" name="nama" placeholder="Nama">
+          </div>
+          <div class="form-group">
+            <label for="email">Email : </label>
+            <input type="text" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan : </label>
+            <textarea class="form-control" name="pesan" placeholder="Masukkan pesan "></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="row" id="cpy">
+      <div class="col-xs-12">
+        <p style="color : white; text-align: center;">Program Studi Sarjana Teknik Informatika 
+Sekolah Tinggi Manajemen Informatika dan Komputer Sinar Nusantara Surakarta
+Tahun Ajaran 2019/2020</p>
+      </div>
+    </div>
+  </div>
+<!-- end of footer -->
+
+<script type="text/javascript" src="./Toko Online Softcase_files/jquery.min.js"></script>
+<script type="text/javascript" src="./Toko Online Softcase_files/bootstrap.js"></script>
+<script type="text/javascript" src="./Toko Online Softcase_files/script.js"></script>
+
+</body></html>
